@@ -79,7 +79,7 @@ jobs:
       - name: Build
         run: |
           npm run build
-          npm run start
+          npx serve@latest out
           touch out/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
