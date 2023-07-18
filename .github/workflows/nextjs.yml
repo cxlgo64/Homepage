@@ -78,9 +78,8 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
       - name: Build
         run: |
-          npm ci
           npm run build
-          npm run export
+          npm run deploy
           touch out/.nojekyll
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
