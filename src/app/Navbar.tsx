@@ -25,8 +25,11 @@ const Navbar = () => {
       <Link href="/blogs" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
         Blogs
       </Link>
-      <Link href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+      <Link href="/development_kit" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
         DevelopKit
+      </Link>
+      <Link href="/games" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+        Games
       </Link>
       <Link href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
         Contact me
