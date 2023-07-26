@@ -14,10 +14,11 @@ const galley = () => {
             ['img6','/DSC03525.jpg'],
             ['img7','/DSC03560.jpg'],
           ].map(([title,srcs])=>(
-            <div className="grid-block1">
+            <div className="grid-block1" key={title}>
               <div className="title">
         <a href="#" className="title-link hover:opacity-100 hover:top-[-16px] hover:left-[-16px]">
             <Image className="title-img title-img1 "
+            key={srcs}
             src={srcs}
             alt={title}
             width={400}

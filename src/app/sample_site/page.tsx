@@ -22,7 +22,7 @@ export default function Sample_home() {
         <div><h4 className='text-xl p-5'>Technology Stack</h4></div>
         {/*details for Project experiences */}
         <div><h4 className='text-xl p-5'>Project Experience</h4></div>
-        <div className='col-span-3'>  <h5 className='text-xl p-5'>Galley</h5><Galley></Galley></div>
+        <div className='col-span-3'>  <h5 className='text-xl p-5'>Galley</h5></div>
       </div>
       
       

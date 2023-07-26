@@ -34,6 +34,7 @@ export default function about() {
             ['Lightroom','https://upload.wikimedia.org/wikipedia/commons/b/b6/Adobe_Photoshop_Lightroom_CC_logo.svg'],
           ].map(([skills,logo])=>(
             <div className="flex my-3  items-center"><Image className='ml-10'
+            key={logo}
             src={logo}
             alt={skills}
             width={65}
@@ -59,7 +60,7 @@ export default function about() {
             ['Lightroom','https://upload.wikimedia.org/wikipedia/commons/b/b6/Adobe_Photoshop_Lightroom_CC_logo.svg'],
           ].map(([title,links])=>(
             <div className="grid-row-2 items-center group">
-              <a href={links} className='my-2 rounded-2xl'>
+              <a key={links} href={links} className='my-2 rounded-2xl'>
               <Image key={links} className="opacity-100 block w-1/2 h-1/2 transition-opacity rounded-2xl group-hover:opacity-30" 
               src={links}
               alt={title}
