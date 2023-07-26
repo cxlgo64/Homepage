@@ -33,8 +33,7 @@ export default function about() {
             ['C#','https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png'],
             ['Lightroom','https://upload.wikimedia.org/wikipedia/commons/b/b6/Adobe_Photoshop_Lightroom_CC_logo.svg'],
           ].map(([skills,logo])=>(
-            <div className="flex my-3  items-center"><Image className='ml-10'
-            key={logo}
+            <div className="flex my-3  items-center" key={logo}><Image className='ml-10'
             src={logo}
             alt={skills}
             width={65}
@@ -59,9 +58,10 @@ export default function about() {
             ['C#','https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png'],
             ['Lightroom','https://upload.wikimedia.org/wikipedia/commons/b/b6/Adobe_Photoshop_Lightroom_CC_logo.svg'],
           ].map(([title,links])=>(
-            <div className="grid-row-2 items-center group">
+            <div className="grid-row-2 items-center group" key={links}>
               <a key={links} href={links} className='my-2 rounded-2xl'>
-              <Image key={links} className="opacity-100 block w-1/2 h-1/2 transition-opacity rounded-2xl group-hover:opacity-30" 
+              <Image className="opacity-100 block w-1/2 h-1/2 transition-opacity rounded-2xl group-hover:opacity-30" 
+              key={title}
               src={links}
               alt={title}
               width={100}
