@@ -1,10 +1,10 @@
 
 import './globals.css'
 import type { Metadata } from 'next'
-import Footer from './footer';
-import Navbar from "./Navbar";
+import Footer from '../componet/footer';
+import Navbar from "../componet/Navbar";
 import { Inter } from 'next/font/google';
-import Contactform from './contactform';
+import Contactform from '../componet/contactform';
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 
