@@ -2,7 +2,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import Footer from '../componet/footer';
-import Navbar from "../componet/Navbar";
+import Navbar from "./Navbar";
 import { Inter } from 'next/font/google';
 import Contactform from '../componet/contactform';
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -24,16 +24,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      
+    <html lang="en">     
       <body className={inter.className}>
         <Navbar />
         {children}
         <Contactform  />
-        <Footer />
-        
-      </body>
-      
+        <Footer />       
+      </body>      
     </html>
   )
 }
