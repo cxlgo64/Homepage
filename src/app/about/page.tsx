@@ -1,11 +1,7 @@
-'use client'
-import Link from 'next/link'
+'use client' //about/page.tsx
 import Image from 'next/image'
 import Galley from '../../componet/galley'
-import styles from "./page.module.css";
 import Map from '../../componet/map';
-import { useState } from 'react';
-
 
 export default function about() {
   return (
