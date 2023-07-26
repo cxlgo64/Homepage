@@ -20,7 +20,7 @@ const Map: NextPage = () => {
   );
 
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY as string,
+    googleMapsApiKey:"AIzaSyBXxXg4Lcn5OYt7F0p7943Mvy6wJT8aDIE",
     libraries: libraries as any,
   });
 

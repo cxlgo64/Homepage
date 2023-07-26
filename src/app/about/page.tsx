@@ -5,7 +5,7 @@ import Map from '../../componet/map';
 
 export default function about() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <div className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className='grid lg:gap-80'>
         <div id='Personal' className='p-10 border-double border-2 border-orange-600 hover:border-dotted'><div className='bg-white rounded-full inline-block '>
           <Image className="rounded-full" 
@@ -74,6 +74,6 @@ export default function about() {
       </div>
       
     <Map />
-    </main>
+    </div>
   )
 }
