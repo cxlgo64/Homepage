@@ -1,6 +1,7 @@
-'use client'
+'use client' //home/page.tsx
 import Image from 'next/image'
 import Link from 'next/link'
+import Contactform from './contactform'
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -100,8 +101,9 @@ export default function Home() {
             Check out the game I involved
           </p>
         </a>
+        
       </div>
-      
+      <Contactform  />
     </main>
   )
 }

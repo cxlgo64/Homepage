@@ -8,7 +8,7 @@ import React from "react";
 const Contactform = () => {
   return (
     
-    <div id="root" className="form mx-20 lg:grid-cols-2 justify-between break-after-auto">
+    <div id="contact_form" className="form mx-20 lg:grid-cols-2 justify-between break-after-auto">
         <div className="float-left w-1/2 rounded-2xl h-full lg:bg-[url('/DSC03499.jpg')]">
           <h2 className=" text-center text-4xl rounded-2xl bg-slate-400 text-black-700 lg:text-orange-700 mt-8 mb-8 pt-2 pb-2">CONTACT ME!</h2>
       

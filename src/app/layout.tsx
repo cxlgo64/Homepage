@@ -4,7 +4,6 @@ import type { Metadata } from 'next'
 import Footer from './footer';
 import Navbar from "./Navbar";
 import { Inter } from 'next/font/google';
-import Contactform from './contactform';
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 
@@ -28,7 +27,6 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar />
         {children}
-        <Contactform  />
         <Footer />       
       </body>      
     </html>

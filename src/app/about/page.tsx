@@ -3,23 +3,33 @@ import Image from 'next/image'
 import Galley from '../../componet/galley'
 import Map from '../../componet/map';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown, faArrowUp } from '@fortawesome/free-solid-svg-icons';
 export default function about() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className='grid lg:gap-80'>
-        <div id='Personal' className='p-10 border-double border-2 border-orange-600 hover:border-dotted'><div className='bg-white rounded-full inline-block '>
-          <Image className="rounded-full" 
+    <div className="slider_container box-border m-0 p-0 ">
+      <div className="leftSlide">
+        <div className=' bg-pink-100'><h2 className='text-xl p-5'>Galley</h2></div> 
+        <div className=' bg-pink-200'><h2 className='text-xl p-5'>Project Experience</h2></div>
+        <div className=' bg-pink-300'><h2 className='text-xl p-5'>Technology Stack</h2></div>
+        <div className=' bg-pink-400'><h2 className='text-lg'>Welcome to my Website</h2></div>
+      </div>
+
+      <div className='rightSlide'>
+        <div id='Personal' className='right-1 justify-center relative top-1/4 left-20'>
+          <Image className="rounded-2xl" 
           src="/DSC03560.jpg"
           alt="icon"
-          width={150}
-          height={150}
+          width={800}
+          height={500}
           priority
           />
+          <p className=' justify-center mx-20'>more content</p>
           </div>
-          <h5 className='text-lg'>Welcome to my Website</h5></div>
+          
           
           {/*details for personal technolog stack */}
-        <div><h4 className='text-xl p-5'>Technology Stack</h4>
+        <div className='right-2'>
         {[
             ['Javascript','https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png'],
             ['HTML','https://www.w3.org/html/logo/badge/html5-badge-h-solo.png'],
@@ -44,7 +54,7 @@ export default function about() {
           </div>
        
         {/*details for Project experiences */}
-        <div><h4 className='text-xl p-5'>Project Experience</h4>
+        <div className='right3 flex mt-10 ml-5'>
         {[
             ['Javascript','https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png'],
             ['HTML','https://www.w3.org/html/logo/badge/html5-badge-h-solo.png'],
@@ -54,26 +64,36 @@ export default function about() {
             ['C#','https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png'],
             ['Lightroom','https://upload.wikimedia.org/wikipedia/commons/b/b6/Adobe_Photoshop_Lightroom_CC_logo.svg'],
           ].map(([title,links])=>(
-            <div className="grid-row-2 items-center group" key={links}>
+            <div className="items-center group w-1/2 h-1/4" key={links}>
               <a key={links} href={links} className='my-2 rounded-2xl'>
-              <Image className="opacity-100 block w-1/2 h-1/2 transition-opacity rounded-2xl group-hover:opacity-30" 
+              <Image className="opacity-100 block w-1/2 h-1/2 transition-opacity rounded-2xl group-hover:opacity-30 border-2 p-5" 
               key={title}
               src={links}
               alt={title}
-              width={100}
-              height={100}
+              width={300}
+              height={200}
               priority
               />
-              <h3 className='transition-opacity opacity-0 w-1/2 group-hover:opacity-100 translate-y-[-30px] lg:translate-y-[-80px] text-center bg-blue-300 text-white text-xl' key={title}>{title}</h3> 
+              <h3 className='transition-opacity opacity-0 w-1/2 group-hover:opacity-100 translate-y-[-30px] lg:translate-y-[-70px] text-center bg-blue-300 text-white text-lg' key={title}>{title}</h3> 
              
               </a> 
               </div>   
-          ))}</div>
+          ))}
+         
+          </div>
+        <div className='right-4'><Galley></Galley></div>
+        
 
-        <div className='col-span-3'>  <h5 className='text-xl p-5'>Galley</h5><Galley></Galley></div>
+        
+        
       </div>
-      
-    <Map />
+      <div className='action-buttons'>
+          
+          <button className='upButton'><FontAwesomeIcon icon={faArrowUp} /></button>
+          <button className='downButton'><FontAwesomeIcon icon={faArrowDown} /></button>
+        </div>
+        <script src='./static/button.js' />
+    {/* <Map /> */}
     </div>
   )
 }
