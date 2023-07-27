@@ -92,7 +92,7 @@ export default function about() {
           <button className='upButton'><FontAwesomeIcon icon={faArrowUp} /></button>
           <button className='downButton'><FontAwesomeIcon icon={faArrowDown} /></button>
         </div>
-        <script src='./static/button.js' />
+        <script src='./static/button.js' async />
     {/* <Map /> */}
     </div>
   )
