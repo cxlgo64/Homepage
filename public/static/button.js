@@ -22,7 +22,7 @@ const changeSlide=(direction)=>{
     const slideHeight = sliderContainer.clientHeight;
     if(direction==='up'){
         activeSlideIndex++;
-        if(activeSlideIndex> slidesLength-1){
+        if(activeSlideIndex>= slidesLength-1){
             activeSlideIndex = 0;
         }
     }

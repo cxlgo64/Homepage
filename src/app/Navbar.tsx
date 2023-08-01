@@ -1,15 +1,15 @@
 // ./Navbar.tsx
 import Link from "next/link";
 import React from "react";
+import About from "./page"
 const Navbar = () => {
   return (
-    <div className="navbar bg-base-500">
-      <nav className="flex items-center justify-between flex-wrap bg-orange-500 p-6">
-  <div className="flex items-center flex-shrink-0 text-white mr-6">
-    <svg className="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
-    <span className="font-semibold text-xl tracking-tight"><Link href="/" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-    Xueliang Chen
-      </Link></span>
+    <div className="navbar bg-base-500 text-[#fad4a2]">
+      <nav className="flex items-center justify-between flex-wrap bg-[#f13c07] p-6">
+  <div className="flex items-center flex-shrink-0  hover:text-white mr-6">
+    <Link href="/" className="block mt-4 lg:inline-block lg:mt-0  mr-4">
+    <span>Xueliang Chen</span>
+      </Link>
   </div>
   {/* <div className="block lg:hidden">
     <button className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
@@ -18,28 +18,24 @@ const Navbar = () => {
   </div> */}
   <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
     <div className="text-sm lg:flex-grow">
-      <Link href="./about" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-        About me
-      </Link>
-      <Link href="./sample_site" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+      <Link href="./sample_site" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
         Website_Examples
       </Link>
-      <Link href="./blogs" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+      <Link href="./blogs" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
         Blogs
       </Link>
-      <Link href="./development_kit" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+      <Link href="./development_kit" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white  mr-4">
         DevelopKit
       </Link>
-      <Link href="./games" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+      <Link href="./games" className="block mt-4 lg:inline-block lg:mt-0 hover:text-white mr-4">
         Games
       </Link>
-      <Link href="#contact_form" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
+      <Link href="#contact_form" className="block mt-4 lg:inline-block hover:text-white lg:mt-0 ">
         Contact me
       </Link>
     </div>
     <div>
-      <a href="/" className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">中文页面</a>
-      <a href="/chinese" className="inline-block text-sm px-4 py-2 ml-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">English</a>
+      <a href="/chinese" className="inline-block text-sm px-4 py-2 ml-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-[#fad4a2] hover:bg-white mt-4 lg:mt-0">English</a>
     </div>
   </div>
 </nav>
